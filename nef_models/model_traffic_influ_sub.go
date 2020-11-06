@@ -9,6 +9,10 @@
 
 package nef_models
 
+import (
+	"free5gc/lib/openapi/models"
+)
+
 type TrafficInfluSub struct {
 
 	// Identifies a service on behalf of which the AF is issuing the request.
@@ -60,10 +64,11 @@ type TrafficInfluSub struct {
 	Self string `json:"self,omitempty" bson:"self"`
 
 	// Identifies IP packet filters.
-	TrafficFilters []FlowInfo `json:"trafficFilters,omitempty" bson:"trafficFilters"`
+	TrafficFilters []models.FlowInfo `json:"trafficFilters,omitempty" bson:"trafficFilters"`
 
 	// Identifies Ethernet packet filters.
-	EthTrafficFilters []EthFlowDescription `json:"ethTrafficFilters,omitempty" bson:"ethTrafficFilters"`
+	// EthTrafficFilters []EthFlowDescription `json:"ethTrafficFilters,omitempty" bson:"ethTrafficFilters"`
+	EthTrafficFilters []models.EthFlowDescription `json:"ethTrafficFilters,omitempty" bson:"ethTrafficFilters"`
 
 	// Identifies the N6 traffic routing requirement.
 	TrafficRoutes []RouteToLocation `json:"trafficRoutes,omitempty" bson:"trafficRoutes"`

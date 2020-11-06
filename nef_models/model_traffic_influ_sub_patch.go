@@ -9,13 +9,17 @@
 
 package nef_models
 
+import (
+	"free5gc/lib/openapi/models"
+)
+
 type TrafficInfluSubPatch struct {
 
 	// Identifies whether an application can be relocated once a location of the application has been selected.
 	AppReloInd bool `json:"appReloInd,omitempty" bson:"appReloInd"`
 
 	// Identifies IP packet filters.
-	TrafficFilters []FlowInfo `json:"trafficFilters,omitempty" bson:"trafficFilters"`
+	TrafficFilters []models.FlowInfo `json:"trafficFilters,omitempty" bson:"trafficFilters"`
 
 	// Identifies Ethernet packet filters.
 	EthTrafficFilters []EthFlowDescription `json:"ethTrafficFilters,omitempty" bson:"ethTrafficFilters"`
