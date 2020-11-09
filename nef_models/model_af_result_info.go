@@ -9,8 +9,12 @@
 
 package nef_models
 
+import (
+	"free5gc/lib/openapi/models"
+)
+
 type AfResultInfo struct {
 	AfStatus AfResultStatus `json:"afStatus" bson:"afStatus"`
 
-	TrafficRoute *RouteToLocation `json:"trafficRoute,omitempty" bson:"trafficRoute"`
+	TrafficRoute *models.RouteToLocation `json:"trafficRoute,omitempty" bson:"trafficRoute"`
 }

@@ -29,7 +29,7 @@ type TrafficInfluSub struct {
 
 	Dnn string `json:"dnn,omitempty" bson:"dnn"`
 
-	Snssai *Snssai `json:"snssai,omitempty" bson:"snssai"`
+	Snssai *models.Snssai `json:"snssai,omitempty" bson:"snssai"`
 
 	// string containing a local identifier followed by \"@\" and a domain identifier. Both the local identifier and the domain identifier shall be encoded as strings that do not contain any \"@\" characters. See Clauses 4.6.2 and 4.6.3 of 3GPP TS 23.682 for more information.
 	ExternalGroupId string `json:"externalGroupId,omitempty" bson:"externalGroupId"`
@@ -71,7 +71,7 @@ type TrafficInfluSub struct {
 	EthTrafficFilters []models.EthFlowDescription `json:"ethTrafficFilters,omitempty" bson:"ethTrafficFilters"`
 
 	// Identifies the N6 traffic routing requirement.
-	TrafficRoutes []RouteToLocation `json:"trafficRoutes,omitempty" bson:"trafficRoutes"`
+	TrafficRoutes []models.RouteToLocation `json:"trafficRoutes,omitempty" bson:"trafficRoutes"`
 
 	TfcCorrInd bool `json:"tfcCorrInd,omitempty" bson:"tfcCorrInd"`
 

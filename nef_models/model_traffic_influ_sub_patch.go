@@ -25,7 +25,7 @@ type TrafficInfluSubPatch struct {
 	EthTrafficFilters []EthFlowDescription `json:"ethTrafficFilters,omitempty" bson:"ethTrafficFilters"`
 
 	// Identifies the N6 traffic routing requirement.
-	TrafficRoutes []RouteToLocation `json:"trafficRoutes,omitempty" bson:"trafficRoutes"`
+	TrafficRoutes []models.RouteToLocation `json:"trafficRoutes,omitempty" bson:"trafficRoutes"`
 
 	TfcCorrInd bool `json:"tfcCorrInd,omitempty" bson:"tfcCorrInd"`
 
