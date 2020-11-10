@@ -29,7 +29,7 @@ type TrafficInfluSubPatch struct {
 
 	TfcCorrInd bool `json:"tfcCorrInd,omitempty" bson:"tfcCorrInd"`
 
-	TempValidities []TemporalValidity `json:"tempValidities,omitempty" bson:"tempValidities"`
+	TempValidities []models.TemporalValidity `json:"tempValidities,omitempty" bson:"tempValidities"`
 
 	// Identifies a geographic zone that the AF request applies only to the traffic of UE(s) located in this specific zone.
 	ValidGeoZoneIds []string `json:"validGeoZoneIds,omitempty" bson:"validGeoZoneIds"`
