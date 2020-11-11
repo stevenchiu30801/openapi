@@ -65,6 +65,7 @@ type APIClient struct {
 	TraceDataDocumentApi                            *TraceDataDocumentApiService
 	DataChangeNotifyCallbackDocumentApi             *DataChangeNotifyCallbackDocumentApiService
 	PolicyDataChangeNotificationCallbackDocumentApi *PolicyDataChangeNotificationCallbackDocumentApiService
+	IndividualInfluenceDataDocumentApi              *IndividualInfluenceDataDocumentApiService
 }
 
 type service struct {
@@ -126,5 +127,6 @@ func NewAPIClient(cfg *Configuration) *APIClient {
 	c.TraceDataDocumentApi = (*TraceDataDocumentApiService)(&c.common)
 	c.DataChangeNotifyCallbackDocumentApi = (*DataChangeNotifyCallbackDocumentApiService)(&c.common)
 	c.PolicyDataChangeNotificationCallbackDocumentApi = (*PolicyDataChangeNotificationCallbackDocumentApiService)(&c.common)
+	c.IndividualInfluenceDataDocumentApi = (*IndividualInfluenceDataDocumentApiService)(&c.common)
 	return c
 }
