@@ -50,7 +50,7 @@ type TrafficInfluSub struct {
 
 	MacAddr string `json:"macAddr,omitempty" bson:"macAddr"`
 
-	DnaiChgType DnaiChangeType `json:"dnaiChgType,omitempty" bson:"dnaiChgType"`
+	DnaiChgType models.DnaiChangeType `json:"dnaiChgType,omitempty" bson:"dnaiChgType"`
 
 	// string formatted according to IETF RFC 3986 identifying a referenced resource.
 	NotificationDestination string `json:"notificationDestination,omitempty" bson:"notificationDestination"`
